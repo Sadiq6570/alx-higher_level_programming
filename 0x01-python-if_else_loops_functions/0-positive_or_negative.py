@@ -10,4 +10,4 @@ elif number == 0:
 
 else:
     number < 0
-    print(f"{number}: is negetive")
+    print(f"{number}: is negative")
