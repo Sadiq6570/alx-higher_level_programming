@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""passing class empty
+"""Square Class
 
-empty class
-   class passing
-
-
+empty w class  anything for the moment
 
 """
 
-class square:
+
+class Square:
     pass
