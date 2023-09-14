@@ -1,23 +1,31 @@
+q
 #!/usr/bin/python3
-""" Module that executes a function that appends a line """
+'''
+Writing a class Student that defines a student
+'''
 
 
-def append_after(filename="", search_string="", new_string=""):
-    """ Function that appends a new line when a string is found
+class Student:
+    '''
+    Student class
+    '''
 
-    Args:
-        filename: filename
-        search_string: string to search
-        new_string: string to append
+    def __init__(self, first_name, last_name, age):
+        '''
+        Constructor
+        '''
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
-    """
-
-    res_line = []
-    with open(filename, 'r', encoding="utf-8") as f:
-        for line in f:
-            res_line += [line]
-            if line.find(search_string) != -1:
-                res_line += [new_string]
-
-    with open(filename, 'w', encoding="utf-8") as f:
-        f.write("".join(res_line))
+    def to_json(self, attrs=None):
+        '''
+        Retrieves dict
+        '''
+        if attrs is None:
+            return self.__dict__
+        my_dict = {}
+        for items in attrs:
+            if hasattr(self, items):
+                my_dict[items] = getattr(self, items)
+        return my_dict
