@@ -1,14 +1,19 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 
 
+'''
+  viewing the attribute that are available in object and method
+
+'''
 
 
 def lookup(obj):
-   ''' 
-      list the available attt  in  the object 
-classss
+   
+
+  '''
+      Return the obj list()
+
 
 '''
-   return dir(obj)
-
+    return dir(obj)
 
