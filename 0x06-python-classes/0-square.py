@@ -1,12 +1,5 @@
 #!/usr/bin/python3
-
-
-Class square:
-    '''
-     
-     empty clsss and pas
-    classs square
-
-
-    '''
+''' empty class'''
+class Square:
+    '''passing empty classs'''
     pass
