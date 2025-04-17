@@ -6,5 +6,5 @@ class Square:
     '''passing square empty class'''
 
     def __init__(self, size):
-        self._size = size
+        self.__size = size
         '''private self'''
